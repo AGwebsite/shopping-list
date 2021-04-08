@@ -23,6 +23,7 @@ input, button, .list {
 .button {
    display: flex;
    flex-direction: column;
+   outline: none;
 }
 
 
@@ -31,6 +32,9 @@ input, button, .list {
     font-family: 'Dela Gothic One', cursive;
     color: gray;
     opacity: 0.8;
+    margin-top: 50%;
+    margin-bottom: 50%;
+   
   }
 
 
@@ -43,6 +47,7 @@ button {
     border-radius: 20px;
     font-family: 'Dela Gothic One', cursive;
     color: black;
+    outline: none;
 }
 
 button:hover {
@@ -75,6 +80,7 @@ button:hover:before {
     border-radius: 20px;
     border: 2px solid #EB1212;
     padding: 5px;
+    outline: none;
 }
 
 
