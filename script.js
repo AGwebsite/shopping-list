@@ -13,7 +13,7 @@ button.addEventListener("click", function() {
 
         for (var i= 0; i<=item.length; i++){
             item[i].addEventListener("click", function(){
-           console.log("fjrdslhbfrbjhf");
+           console.log("test avant de mettre l'action cocher l'item");
                    })
                    }
         }
@@ -30,7 +30,7 @@ input.addEventListener("keypress", function(event){
 
         for (var i= 0; i<=item.length; i++){
              item[i].addEventListener("click", function(){
-            console.log("fjrdslhbfrbjhf");
+            console.log("test avant de mettre l'action cocher l'item");
                     })
                     }
     });
