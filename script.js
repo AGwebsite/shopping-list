@@ -29,7 +29,6 @@ function addNewList (){
 }
 
 
-
 button.addEventListener("click", addList);
 
 input.addEventListener("keypress", keyCode);
