@@ -25,17 +25,24 @@ input, button, .list {
    flex-direction: column;
 }
 
+
 ::placeholder {
     text-align: center;
+    font-family: 'Dela Gothic One', cursive;
+    color: gray;
+    opacity: 0.8;
   }
+
 
 button {
     padding: 10px;
     text-decoration: none;
-    border: 1px solid rgb(146, 148, 248);
+    border: 2px solid #EB1212;
     position: relative;
     overflow: hidden;
     border-radius: 20px;
+    font-family: 'Dela Gothic One', cursive;
+    color: black;
 }
 
 button:hover {
@@ -61,6 +68,15 @@ button:before {
 button:hover:before {
     left: 100%;
   }
+
+/*INPUT*/
+
+#input{
+    border-radius: 20px;
+    border: 2px solid #EB1212;
+    padding: 5px;
+}
+
 
 h1{
     /* margin-bottom: 0; */

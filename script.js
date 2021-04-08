@@ -4,46 +4,37 @@ var list = document.getElementById("list");
 var input = document.getElementById("input");
 var item = document.getElementsByTagName("li") ;
 
-
-button.addEventListener("click", function() {
+function addList(){
     if (input.value !== ""){
-        var newList = document.createElement("li") ;
-        newList.appendChild(document.createTextNode(input.value)) ;
-        list.appendChild(newList) ;
+        addNewList() ;
+        checkList();
+    }
+}
 
-        for (var i= 0; i<=item.length; i++){
-            item[i].addEventListener("click", function(){
-           console.log("test avant de mettre l'action cocher l'item");
-                   })
-                   }
-        }
-    });
-
-
-
-input.addEventListener("keypress", function(event){
+function keyCode(event){
     if (input.value !== "" && event.keyCode === 13){
-        var newList = document.createElement("li") ;
-        newList.appendChild(document.createTextNode(input.value)) ;
-        list.appendChild(newList) ;
+        addNewList();
+        checkList();
         }
+}
 
-        for (var i= 0; i<=item.length; i++){
-             item[i].addEventListener("click", function(){
-            console.log("test avant de mettre l'action cocher l'item");
-                    })
-                    }
-    });
+function checkList (){
+    for (var i= 0; i<=item.length; i++){
+        item[i].addEventListener("click", function(){
+        console.log("test avant de mettre l'action cocher l'item");})
+                   }
+}
+
+function addNewList (){
+    var newList = document.createElement("li") ;
+    newList.appendChild(document.createTextNode(input.value)) ;
+    list.appendChild(newList) ;
+}
+
+
+button.addEventListener("click", addList);
+
+input.addEventListener("keypress", keyCode);
 
 
 
-
-// for (var i= 0; i<=item.length; i++){
-//     item[i].addEventListener("click", function(){
-//         console.log("fjrdslhbfrbjhf");
-//     })
-
-//     for (var i= 0; i<=item.length; i++){
-//         item[i].addEventListener("click", function(){
-//             console.log("fjrdslhbfrbjhf");
-//         })
