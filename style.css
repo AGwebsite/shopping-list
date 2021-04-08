@@ -34,9 +34,7 @@ input, button, .list {
     opacity: 0.8;
     margin-top: 50%;
     margin-bottom: 50%;
-   
   }
-
 
 button {
     padding: 10px;
@@ -88,4 +86,10 @@ h1{
     /* margin-bottom: 0; */
     margin-top: 10%;
     font-size: 30px;
+}
+
+/* LIST */
+
+.check {
+    text-decoration: line-through;
 }
