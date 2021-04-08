@@ -52,7 +52,7 @@ button:before {
     background: linear-gradient(
       120deg,
       transparent,
-      #009DFF,
+      #ff3300,
       transparent
     );
     transition: all 650ms;
@@ -65,4 +65,5 @@ button:hover:before {
 h1{
     /* margin-bottom: 0; */
     margin-top: 20%;
+    font-size: 30px;
 }
