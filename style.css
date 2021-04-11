@@ -28,6 +28,7 @@ input, button, .list {
    display: flex;
    flex-direction: column;
    outline: none;
+   text-align: center;
 }
 
 
