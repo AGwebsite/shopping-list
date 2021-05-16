@@ -20,6 +20,7 @@ body {
 <!--FORM-->
 input, button, .list {
     margin-top: 20px;
+    box-shadow : 5px ;
 }
 
 
@@ -29,6 +30,7 @@ input, button, .list {
    flex-direction: column;
    outline: none;
    text-align: center;
+   box-shadow : 5px ;
 }
 
 
